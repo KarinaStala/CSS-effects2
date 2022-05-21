@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek Dobranoc</title>
+    <style>
+        span {
+            text-transform: uppercase;
+            position: fixed;
+            line-height: 60px;
+            padding: 0% 20px;
+            background-color: black;
+            color: yellow;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 3px;
+            transition: 0.3s;
+        }
+
+        span:hover {
+            border: 3px dotted yellow;
+        }
+
+        div {
+            transition: 0.5s;
+        }
+
+        div:first-of-type {
+            position: absolute;
+            width: 300px;
+            height: 250px;
+            background-color: brown;
+            margin: 0 auto;
+            top: 40%;
+            left: 40vw;
+            border-bottom: 10px solid black;
+            border-top: 50px solid black;
+        }
+
+        div:nth-of-type(2) {
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+            border-top: 5px dashed white;
+            position: absolute;
+            top: 60%;
+            left: 45vw;
+        }
+
+        div:nth-of-type(3) {
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+            border-top: 5px dashed white;
+            position: absolute;
+            top: 60%;
+            left: 55vw;
+            transition: 0.3s 0.5s;
+        }
+
+        div:nth-of-type(4) {
+            width: 40px;
+            height: 60px;
+            background-color: gainsboro;
+            position: absolute;
+            top: 80%;
+            left: 50vw;
+            border: 4px dotted black;
+            border-bottom: 4px solid black;
+        }
+
+        div:nth-of-type(4):hover {
+            background-color: black;
+        }
+
+        div:nth-of-type(5) {
+            width: 30px;
+            height: 40px;
+            top: 33.5%;
+            left: 60vw;
+            background-color: brown;
+            position: absolute;
+            border-top: 5px dotted black;
+        }
+
+        span:hover~div:nth-of-type(2) {
+            background-color: black;
+        }
+
+        span:hover~div:nth-of-type(3) {
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <span>Dobranoc</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
